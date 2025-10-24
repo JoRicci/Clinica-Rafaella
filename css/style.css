@@ -1,0 +1,29 @@
+/* geral */
+@import url(geral.css);
+
+/* header */
+@import url(header.css);
+
+/* hero */
+@import url(hero.css);
+
+/* tratamentos */
+@import url(especialidades.css);
+
+/* sobre */
+@import url(sobre.css);
+
+/* diferencial */
+@import url(diferenciais.css);
+
+/* depoimentos */
+@import url(testemunhos.css);
+
+/* equipe */
+@import url(equipe.css);
+
+/* contato */
+@import url(contato.css);
+
+/* footer */
+@import url(footer.css);

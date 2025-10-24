@@ -1,0 +1,188 @@
+:root {
+  /* Cor de Higiene/Base - Branco Puro */
+  --cor-fundo-principal: #FFFFFF;
+  
+  /* Cor de Acolhimento/Destaque Suave - Rosa Pastel */
+  --cor-principal-rosa: #FADADD;
+  
+  /* Cor de Profissionalismo/Texto - Cinza Neutro */
+  --cor-texto-principal: #333333;
+  
+  /* Cor de Sofisticação/Destaque Forte - Rose Gold Suave */
+  --cor-destaque-gold: #B76E79;
+  
+  
+  /* ==================================== */
+  /* VARIAÇÕES ÚTEIS */
+  /* ==================================== */
+  
+  /* Cor Secundária de Texto (para textos mais claros ou descrições) */
+  --cor-texto-secundario: #A6A6A6; /* Um cinza mais claro */
+  
+  /* Cor para Botões de Chamada para Ação (CTA) */
+  --cor-cta-fundo: var(--cor-destaque-gold); 
+  --cor-cta-texto: var(--cor-fundo-principal); /* Branco para contraste */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html{
+        scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(../assets/bg-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+body .header-button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem ;
+    top: 500px;
+    left: 10px;
+    position: fixed;
+    z-index: 99999999;
+}
+
+body .header-button .btn-02{
+    background-color:var(--cor-destaque-gold);
+    width: 40px;
+	height: 40px;
+	border-radius: 50%  50%  50% 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+
+body .header-button .btn-02 i{
+    font-size: 1.2rem;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+
+    line-height: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body .header-button .btn-02:hover i{
+        animation: shake 0.5s ease-in-out;
+    }
+
+body .header-button .btn-02:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+body .header-button .whats{
+    background-color: #25D366;
+    width: 40px;
+	height: 40px;
+	border-radius: 50%  50%  50% 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body .header-button .whats i{
+    font-size: 1.2rem;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+body .header-button .whats:hover{
+    transform: scale(1.1);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+body .header-button .top i:hover{
+    animation: up 0.5s ease-in-out;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+    max-width: 1140px;
+}
+}
+
+@media (max-width: 768px){
+    body .header-button{
+        display: none;
+}
+}

@@ -1,0 +1,109 @@
+
+section.equipe {
+    padding: 40px 5%;
+    padding-top: 120px;
+    min-height: 100vh;
+    background-color: #FFFFFF; 
+}
+
+section.equipe .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+section.equipe .container h2 {
+    font-size: 3.5rem; 
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: 1px; 
+    color:var(--cor-destaque-gold); 
+    text-align: center;
+}
+
+section.equipe .container p {
+    font-size: 1.1rem;
+    font-weight: 400; 
+    max-width: 900px; 
+    text-align: center;
+    color: #666666; 
+}
+
+
+section.equipe .container .container-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    align-items: flex-start; 
+    gap: 3rem 2rem; 
+}
+
+section.equipe .container .container-team .team-item {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border-radius: 8px; 
+    text-align: center;
+    padding-bottom: 1rem; 
+    background-color: #FFFFFF;
+}
+
+section.equipe .container .container-team .team-item img {
+    width: 100%; 
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+section.equipe .container .container-team .team-item h3 {
+    font-size: 1.8rem; 
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 1.5rem 0 0.5rem 0; 
+    color: var(--cor-destaque-gold);
+}
+
+section.equipe .container .container-team .team-item p {
+    margin: 0 10px; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333333; 
+}
+
+section.equipe .container a{
+    padding: 15px 30px;
+    background-color: var(--cor-cta-fundo);
+    color: var(--cor-cta-texto);
+    border-radius: 50px;
+    display: inline-block;
+    transition: 0.3s ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section.equipe .container a:hover {
+    background-color: #8A525A;
+}
+
+@media (max-width: 768px){
+    section.equipe {
+    padding: 40px 10%;
+    padding-top: 110px;
+}
+section.equipe .container h2 {
+    font-size: 3rem; 
+}
+    section.equipe .container .container-team {
+    display: grid;
+    grid-template-columns:1fr;
+    width: 100%;
+    align-items: flex-start; 
+    gap: 3rem 2rem; 
+}
+
+}
