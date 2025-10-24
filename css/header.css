@@ -96,7 +96,7 @@ header .container .btn-header a:hover{
     color: var(--cor-destaque-gold);
     font-size: 2.2rem;
     display: none;
-    margin-left: 10rem;
+    margin-left: 5rem;
 }
 
 .navbar-mobile {
