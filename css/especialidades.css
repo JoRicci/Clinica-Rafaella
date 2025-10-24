@@ -124,6 +124,11 @@ article.Especialidades .container .container-btn a:hover{
         width: 100%;
     }
 
+    article.Especialidades .container h2{
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
     article.Especialidades .container .container-box{
         grid-template-columns: 1fr;
         justify-items: center; 
